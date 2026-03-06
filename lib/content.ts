@@ -446,7 +446,7 @@ file_reservation_paths(
   paths=["src/auth/**/*.ts", "src/middleware/auth.ts"],
   ttl_seconds=3600,
   exclusive=true,
-  reason="bd-123"
+  reason="br-123"
 )
 
 # Coordinate through threaded messages
@@ -454,9 +454,9 @@ send_message(
   project_key="/abs/path/to/repo",
   sender_name="GreenCastle",
   to=["BlueLake"],
-  subject="[bd-123] Starting auth refactor",
+  subject="[br-123] Starting auth refactor",
   body_md="Reserved src/auth/**. Taking login + token rotation.",
-  thread_id="bd-123",
+  thread_id="br-123",
   ack_required=true
 )`;
 
